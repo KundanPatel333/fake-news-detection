@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+
+{% block title %}Result | Fake News Detection{% endblock %}
+
+{% block content %}
+
+<section class="py-5">
+    <div class="container">
+        <div class="row justify-content-center">
+
+            <div class="col-md-8 text-center">
+                <h2 class="mb-4">Prediction Result</h2>
+
+                {% if news_text %}
+                    <div class="card mb-4">
+                        <div class="card-body text-start">
+                            <h6 class="fw-bold">Entered News:</h6>
+                            <p class="mb-0">{{ news_text }}</p>
+                        </div>
+                    </div>
+                {% endif %}
+
+                {% if prediction == 'REAL' %}
+                    <div class="alert alert-success fw-bold fs-4">
+                        REAL NEWS
+                    </div>
+                {% elif prediction == 'FAKE' %}
+                    <div class="alert alert-danger fw-bold fs-4">
+                        FAKE NEWS
+                    </div>
+                {% else %}
+                    <div class="alert alert-warning fw-bold">
+                        {{ prediction }}
+                    </div>
+                {% endif %}
+
+                <a href="/" class="btn btn-success mt-3">
+                    Check Another News
+                </a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+{% endblock %}

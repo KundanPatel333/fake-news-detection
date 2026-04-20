@@ -1,0 +1,65 @@
+/* GLOBAL */
+body {
+    background-color: #f5f7fa;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+/* NAVBAR */
+.navbar {
+    width: 100%;
+    background-color: #ffffff !important;
+}
+
+.navbar .container {
+    max-width: 1200px;
+}
+
+/* HERO SECTION */
+section {
+    margin-bottom: 40px;
+}
+
+.hero-card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 40px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+}
+
+/* BUTTON */
+.btn-success {
+    background-color: #198754;
+    border: none;
+    padding: 10px 28px;
+    font-size: 16px;
+}
+
+.btn-success:hover {
+    background-color: #157347;
+}
+
+/* CARD STYLE (About, Predict, Contact) */
+.card,
+section .container > div {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+}
+
+/* FORM */
+textarea.form-control {
+    resize: none;
+    border-radius: 8px;
+}
+
+/* CENTER CONTENT */
+.text-center {
+    text-align: center;
+}
+
+/* FOOTER */
+footer {
+    background-color: #ffffff;
+    border-top: 1px solid #e0e0e0;
+}
